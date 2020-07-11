@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "b857edd3-f4d4-4335-8e1e-88f78b801190",
+		"name": "ZooV2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "http://localhost:3800/login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Erick",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "eguerra",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "eguerra@gmail.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3800/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Pruebas",
+					"item": [
+						{
+							"name": "http://localhost:3800/pruebaMiddleware",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTRhMDljNjhlMzJmMjJhYWMyZWI4NDQiLCJuYW1lIjoiRXJpY2siLCJ1c2VybmFtZSI6ImVndWVycmEiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTgxOTE1ODExLCJleHAiOjE1ODE5MTY3MTF9.ucTHeJZw2f-uOKSVpFXrYdguW3aNcUm5sYtbGyYA9ws\"",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3800/user/pruebaMiddleware",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"user",
+										"pruebaMiddleware"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "http://localhost:3800/saveUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Daniel",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "dguevara",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "dguevara@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "animals",
+											"value": "5e4a177f68e83f31e899fbe4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3800/user/saveUser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"user",
+										"saveUser"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "http://localhost:3800/deleteLoggedUser/5e4a09a400a4e21c080e811a",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "authorization",
+										"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTRhMDlhNDAwYTRlMjFjMDgwZTgxMWEiLCJuYW1lIjoiRXJpY2siLCJ1c2VybmFtZSI6ImVndWVycmEiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE1ODE5MTA0NTEsImV4cCI6MTU4MTkxMTM1MX0.trY3dsDnRJTwZ5R5KoU6WC6anidFC9ygscBhaBZNATM\"",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3800/user/deleteLoggedUser/5e4a09a400a4e21c080e811a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"user",
+										"deleteLoggedUser",
+										"5e4a09a400a4e21c080e811a"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "http://localhost:3800/listUsers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "authorization",
+										"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTRhMDljNjhlMzJmMjJhYWMyZWI4NDQiLCJuYW1lIjoiRXJpY2siLCJ1c2VybmFtZSI6ImVndWVycmEiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTgxOTEzOTc1LCJleHAiOjE1ODE5MTQ4NzV9.5pDAhRY7iIK-gY5af5-p6h9-FcCTmvv0kuQoPiuaaRo\"",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3800/user/listUsers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"user",
+										"listUsers"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "animal",
+			"item": [
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "http://localhost:3800/saveAnimal",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTRhMDljNjhlMzJmMjJhYWMyZWI4NDQiLCJuYW1lIjoiRXJpY2siLCJ1c2VybmFtZSI6ImVndWVycmEiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTgxOTEzOTc1LCJleHAiOjE1ODE5MTQ4NzV9.5pDAhRY7iIK-gY5af5-p6h9-FcCTmvv0kuQoPiuaaRo\"",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Tigre",
+											"type": "text"
+										},
+										{
+											"key": "nickName",
+											"value": "Daniel",
+											"type": "text"
+										},
+										{
+											"key": "age",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3800/animal/saveAnimal",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3800",
+									"path": [
+										"animal",
+										"saveAnimal"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
